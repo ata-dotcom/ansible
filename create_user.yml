@@ -2,9 +2,9 @@
 - name: Ansible Create user
   hosts: all
   become: true
-  
+
   tasks:
    - name: Create ata user
      user:
-     	name: ata
+        name: ata
         state: present
