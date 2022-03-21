@@ -1,0 +1,12 @@
+
+
+---
+- name: Debugger demo
+  hosts: all
+  vars:
+    - pkg_name: does_not_exist
+  tasks:
+   - name: Install a package
+     yum:
+      name: "{{ pkg_name }}"
+      state: present
